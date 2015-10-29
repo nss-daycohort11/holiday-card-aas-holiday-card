@@ -1,0 +1,41 @@
+body {
+	width: 50%;
+	margin: 0 auto;
+	font-family: Helvetica, sans-serif;
+	padding: 20px;
+}
+
+h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#user-presets :nth-child(2n+0){
+	margin-right: 20px;
+
+}
+
+textarea {
+	width: 50%;
+	height: 100px;
+	padding: 10px;
+}
+
+select {
+	width: 100px;
+}
+
+button {
+	/*margin: 15px;*/
+	width: 100px;
+	padding: 5px;
+}
+
+#translated-message {
+	text-align: right;
+}
+
+#placeholder-message {
+	color: lightgray;
+	font-style: italic;
+}
