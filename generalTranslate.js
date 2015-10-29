@@ -1,14 +1,22 @@
-var Translate = function(translate) {
+var Translate = (function() {
 	var lexicon = {
-		"merry":"efthymos", 
-		"christmas":"Christougenna", 
-		"and":"kai", 
-		"happy":"eftychismenos", 
-		"new":"neos", 
-		"year":"etos"
+		"merry":"god", 
+		"christmas":"jul", 
+		"and":"och", 
+		"happy":"gott", 
+		"new":"nytt", 
+		"year":"år",
+		// "?":"?",
+		// "!":"!",
+		// ".":".",
+		// "":"",
+		// "":"",
+		// "":"",
+		// "":"",
 	};
 
-	translate.toGreek = function(userMessage) {
+	return {
+		message: function(userMessage) {
 			var messageArray = userMessage.toLowerCase().split(" ");
 			var translatedArray = messageArray.map(function(word) {
 					if (word in lexicon === false) {
@@ -18,6 +26,13 @@ var Translate = function(translate) {
 				var translatedMessage = translatedArray.join(" ");
 				return translatedMessage;
 			}
-	return translate;
+	};
 
-}(Translate);
+
+
+
+
+
+
+
+})();
