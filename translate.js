@@ -1,8 +1,15 @@
-var Translator = (function(words, language) {
+var Translator = (function(language, words) {
 
-  var translate = function(words, lexicon) {
-    //andri's code that translate words
-  };
+  var translate = function(words, language) {
+      var messageArray = words.toLowerCase().split(" ");
+      var translatedArray = messageArray.map(function(word) {
+          if (word in language === false) {
+            return word;
+          } else {return language[word]};
+        });
+        var translatedMessage = translatedArray.join(" ");
+        return translatedMessage;
+      }
 
   return {
     heresAFunc: function(language, words) {

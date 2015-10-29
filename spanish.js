@@ -4,7 +4,7 @@ var Translator = (function(oldTranslator) {
    "and":"y",
    "happy":"feliz",
    "new":"nuevo",
-   "year":"ano"
+   "year":"año"
   };
   
   oldTranslator.getSpanishLexicon = function() {
