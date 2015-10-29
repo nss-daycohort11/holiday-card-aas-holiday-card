@@ -4,7 +4,7 @@ $(document).ready(function() {
 	$("button").click(function() {
 		var userMessage = $("textarea").val();
 		var languageSelect = $("#language option:selected").val();
-		console.log("language", languageSelect);
+		console.log("message", userMessage);
 
 
 
@@ -19,7 +19,10 @@ $(document).ready(function() {
 		if (languageSelect === "spanish") {
 			newMessage = Translate.toSpanish(userMessage);
 		};
-		$("#translated-message").html(newMessage);
+		console.log("MessageafterTrans", newMessage);
+		$("#user-language").html(languageSelect);
+		$("#placeholder-message").html(newMessage);
+		console.log("language", languageSelect);
 
 	});
 

@@ -4,7 +4,7 @@ var Translate = (function() {
    "and":"y",
    "happy":"feliz",
    "new":"nuevo",
-   "year":"año"
+   "year":"ano"
   };
 
 	return {

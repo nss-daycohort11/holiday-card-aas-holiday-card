@@ -36,7 +36,9 @@ button {
 	text-align: right;
 }
 
-#placeholder-message {
-	color: lightgray;
-	font-style: italic;
+
+
+.translated-message {
+	color: green;
+	font-size: 1.4em;
 }

@@ -5,14 +5,14 @@
 var Translate = function(translate) {
 	var lexicon = {
 					"merry":"joyeux", 
-					"christmas":"noël", 
+					"christmas":"noel", 
 					"and":"et", 
 					"happy":"content", 
 					"new":"neuf", 
 					"year":"an"
 					};
 
-	translate.toGreek = function(userMessage) {
+	translate.toFrench = function(userMessage) {
 			var messageArray = userMessage.toLowerCase().split(" ");
 			var translatedArray = messageArray.map(function(word) {
 					if (word in lexicon === false) {
