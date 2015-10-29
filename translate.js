@@ -4,5 +4,5 @@ var Translate = (function() {
 	
 	};
 
-	
 })();
+
